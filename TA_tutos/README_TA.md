@@ -28,3 +28,22 @@
     python3 -m epyseg
     ```
    
+You can install the latest version of Tissue Analyzer (formerly known as Packing Analyzer) within FIJI (http://fiji.sc/Fiji). To do so:
+
+-Launch FIJI
+-Open the "Help" menu
+-Click on "Update..."
+-Click on "Manage update sites" (button located at the bottom left side of the window)
+-Scroll down and tick the "Tissue Analyzer" checkbox
+-Press "Close" and FIJI should offer you to install Tissue Analyzer. 
+-Press "Apply changes"
+-Close the FIJI software
+-Restart FIJI
+-Open the "Plugins" menu and click on "Tissue Analyzer"
+
+all the best,
+
+benoit
+
+PS: please note that Tissue Analyzer is only partially compatible with Packing Analyzer and I do not recommend to use both tools on the same data-set
+PS2: Please follow the link http://imagej.net/How_to_follow_a_3rd_party_update_site to learn more about update sites
