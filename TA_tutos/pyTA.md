@@ -114,7 +114,7 @@ From left to right:
 - The denoising algorithm tends to remove noise from the surface projection image, but it may also generate extra/artificial boundaries
 - <font color='red'>We highly recommend not to use (denoised) surface projections for fluorescence intensity quantification</font>, ideally they should be used only for segmentation
 - Surface projections (denoised or not) are saved in a folder named 'surface_projection' 
-- Surface extraction and denoising can be slow without an appropriate GPU (<font color='purple'>$$$$$TODO offer online training --> not very HARD$$$$$$)</font>
+- Surface extraction and denoising can be slow without an appropriate GPU
 - If you plan to use 3D measurements, please check the file named 'height_map_quality_test.tif' generated, if it contains errors (holes, missing cell signal or shows block artifacts, ...) then the corresponding 3D measurements will be erroneous and should not be used. Correcting the height map can solve the problem, pyTA contains no tools to correct height maps.
 
 ## Segmentation
@@ -124,7 +124,7 @@ From left to right:
 3. Press 'Deep learning/EPySeg segmentation'
 
 **Tips**:
-- Segmentation using deep learning can be slow without an appropriate GPU, please be patient (<font color='purple'>$$$$$TODO offer online training --> not very HARD$$$$$$)</font>
+- Segmentation using deep learning can be slow without an appropriate GPU, please be patient
 - If the resulting deep learning segmentation is of low quality (i.e. over and/or under segmentation); it is likely that your images significantly differ from the ones used to train the deep learning model and that retraining the model on your samples could help
 - Segmentation can be achieved without deep learning, i.e. using the Watershed algorithm. However, we recommend using the watershed segmentation only when deep learning segmentation fails, because the watershed masks always contain a significant number of errors (under and over segmentation) 
 
@@ -137,6 +137,7 @@ Segmented cells may contain segmentation errors (usually there very few when usi
 1. Select the 'Segmentation' tab
 2. Select the image to correct in the List
 3. Draw over missing bonds (left click) and pay attention to intersect two other existing bonds (see below)
+
 ![pyTA GUI](./pyTA_images/draw_bond.png "pyTA graphical user interface")
 4. Press 'Enter' or 'Shift+Enter' to apply the edit
 5. Press the 'Save' icon below the drawing panel to apply/store the edit 
@@ -149,6 +150,7 @@ Segmented cells may contain segmentation errors (usually there very few when usi
 1. Select the 'Segmentation' tab
 2. Select the image to correct in the List
 3. Draw dots (left click) in the cells (ideally close to the cell centroid) surrounding the missing bond (see below)
+
 ![pyTA GUI](./pyTA_images/restore_bond.png "pyTA graphical user interface")
 4. Press 'Ctrl+M' to run the watershed algorithm locally and restore the missing bond
 5. Press the 'Save' icon below the drawing panel to apply/store the edit
@@ -256,13 +258,5 @@ The log window shows errors in red and pyTA provided information in black. Pleas
 ## Units
 
 TA gives measurements in pixels (perimeter, area, ...). The user must apply a scaling factor to values in pixels to be biologically significant (e.g. multiply perimeter by pixel size or multiply area by the square of pixel size).
-
-## Divisions/...
-
-## Plots...
-
-## SQL ???
-
-## What else ???
 
 
