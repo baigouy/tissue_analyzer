@@ -12,7 +12,7 @@ Historically, TA was developed in Java (to integrate with the ImageJ/FIJI ecosys
   - Closed source
   - Classical watershed segmentation of cells (no deep learning)
 
-[Tutorial for the Python version of TA](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/pyTA.md)
+[Tutorial for the Python version of TA (pyTA)](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/pyTA.md)
 
 - Advantages:
   - Open-source
