@@ -10,17 +10,16 @@
 1. **Software installation**
     - pyTA can be installed on any recent computer capable of running Conda and Python 3.7 (or >)
     - Open the system command line (see Tips)
-    - Type 'conda create -n TA python=3.7', without the quotes, to create and activate a Conda environment for pyTA
-    - Type 'conda deactivate' to leave the current Conda environment
+    - Type 'conda create -n TA python==3.7', without the quotes, to create and activate a Conda environment for pyTA
     - Enter the pyTA environment by typing 'conda activate TA'
-    - Install pyTA by running the following command 'pip install --user --upgrade epyseg'.
+    - Install pyTA by running the following command 'pip install --upgrade epyseg'.
 
 <Br>
    
 2. **Run pyTA**
     - Open a terminal (see Tips)
     - Type 'conda activate TA' in the terminal to activate the environment
-    - Type 'epyseg.ta' to open the TA graphical user interface
+    - Type 'python -m epyseg.ta' to open the TA graphical user interface
 
 **Tips**:
 - Open a terminal on:
