@@ -1,30 +1,23 @@
-# Tissue Analyzer
+# Tissue Analyzer (TA)
 
-This repo contains tutorials for the java version of Tissue Analyzer
+Historically, TA was developed in Java (to integrate with the ImageJ/FIJI ecosystem). More recently, I started developing a Python version of Tissue Analyzer, this choice is mainly motivated by the ease of use of deep learning in Python (as compared to Java) and by the numpy library that allows for very efficient, yet simple, handling of images/matrices.
 
-## Install
+[Tutorial for the Java version of TA](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/TA_java.md)
 
-- [Follow the guide](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/install.md)
+- Advantages:
+  - Can be used as an ImageJ/FIJI plugin
+  - Still has more functionalities than the python version
+- Drawbacks:
+  - Support is discontinued 
+  - Closed source
+  - Classical watershed segmentation of cells (no deep learning)
 
-## Tutos
+[Tutorial for the Python version of TA](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/pyTA.md)
 
-- [Segment cells](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/tissue_segmentation.md)
-- [Edit segmentation](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/correct_segmentation.md)
-- [Track cells](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/track_cells.md)
-
-## Toolbars
-
-- [Image](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/image_toolbar.md)
-- [List](https://github.com/baigouy/tissue_analyzer/blob/main/TA_tutos/list_toolbar.md)
-
-## Useful shortcuts
-
-- Press the 'i' icon at the bottom of the software to get a thorough list of shortcuts
-
-  - **Left click**: Draw a new contact between two existing ones
-  - **Right click**: Remove any pixel from a contact to delete a bond
-  - **Enter**: Apply correction (finalize addition or removal of bonds)
-  - **Ctrl + S**: Save the current mask (must be done after editing an image)
-  - **Shift + Enter**: Apply correction (finalize addition or removal of bonds) and remove small cells (based on an area cutoff)
-  - **M**: Show or hide the mask (helps in finding out segmentation errors)
-  - **Ctrl + M**: Draw two or more seeds (cell centroids) within an unsegmented region, then press this combination of keys to rerun the watershed segmentation locally, this is much faster than redrawing bonds manually
+- Advantages:
+  - Open-source
+  - Uses deep learning based segmentation
+  - Under active development
+- Drawbacks:
+  - Some emblematic functionalities of TA are missing/under development (cell divisions, cell death) 
+  - Analyses may take longer (Python is much slower than Java for some things, such as accessing pixels of an image)
