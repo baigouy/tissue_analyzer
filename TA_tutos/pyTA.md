@@ -15,7 +15,7 @@
     - Update pip using the command 'pip install -U pip'
     - Install pyTA by running the following command 'pip install -U epyseg'
     - Update numpy using 'pip install -U numpy'
-    - Install a missing library using 'pip install -U scikit-learn'
+    - Install a missing library using 'pip install -U scikit-learn' (Thanks to Fabien B. for the tip)
 
 <Br>
    
