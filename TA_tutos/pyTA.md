@@ -12,7 +12,10 @@
     - Open the system command line (see Tips)
     - Type 'conda create -n TA python==3.7', without the quotes, to create and activate a Conda environment for pyTA
     - Enter the pyTA environment by typing 'conda activate TA'
+    - update pip using the command 'pip install --upgrade pip'
     - Install pyTA by running the following command 'pip install --upgrade epyseg'.
+    - install a missing librarys using 'pip install threadpoolctl'
+    - update numpy uisng 'pip install -U numpy'
 
 <Br>
    
