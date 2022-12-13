@@ -1,5 +1,5 @@
 [//]: # (# pyTA)
-<center> <h1>pyTA</h1> </center>
+<h1>pyTA</h1>
 
 <br>
 
@@ -99,6 +99,7 @@ From left to right:
 | Ctrl & +         | Zoom+                                                                                                           |
 | Ctrl & -         | Zoom-                                                                                                           |
 | Ctrl & 0         | Reset zoom                                                                                                      |
+| C                | Increase display contrast (à la 'Auto' in the imageJ contrast editor)                                           |
 
 ## Pre-processing (Optional)
 
