@@ -8,14 +8,12 @@
 ## Install/Run pyTA
 
 1. **Software installation**
-    - pyTA can be installed on any recent computer capable of running Conda and Python 3.7 (or >)
+    - pyTA can be installed on any recent computer capable of running Conda or miniconda (recommended)
     - Open the system command line (see Tips)
     - Type 'conda create -n TA python==3.7', without the quotes, to create and activate a Conda environment for pyTA
     - Enter the pyTA environment by typing 'conda activate TA'
     - Update pip using the command 'pip install -U pip'
     - Install pyTA by running the following command 'pip install -U epyseg'
-    - Update numpy using 'pip install -U numpy'
-    - Install a missing library using 'pip install -U scikit-learn' (Thanks to Fabien B. for the tip)
 
 <Br>
    
